@@ -1,0 +1,97 @@
+definitions:
+  api.CountResponse:
+    properties:
+      count:
+        type: integer
+    type: object
+  api.Empty:
+    type: object
+  verify.LinksResponse:
+    properties:
+      groups:
+        items:
+          $ref: '#/definitions/verify.PrefixGroup'
+        type: array
+    type: object
+  verify.PrefixGroup:
+    properties:
+      prefix:
+        type: string
+      prefixes:
+        items:
+          type: string
+        type: array
+    type: object
+  verify.VerifyRequest:
+    properties:
+      urls:
+        items:
+          type: string
+        type: array
+      version:
+        type: integer
+    type: object
+  verify.VerifyResponse:
+    properties:
+      exists:
+        type: boolean
+    type: object
+info:
+  contact: {}
+paths:
+  /count.json:
+    get:
+      consumes:
+      - application/json
+      description: Count
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/api.CountResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/api.Empty'
+  /links.json:
+    get:
+      consumes:
+      - application/json
+      description: Companies links
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/verify.LinksResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/api.Empty'
+  /verify.json:
+    post:
+      consumes:
+      - application/json
+      description: Verify
+      parameters:
+      - description: request
+        in: body
+        name: verify.VerifyRequest
+        required: true
+        schema:
+          $ref: '#/definitions/verify.VerifyRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/verify.VerifyResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/api.Empty'
+swagger: "2.0"

@@ -1,0 +1,154 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": {
+        "/count.json": {
+            "get": {
+                "description": "Count",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/api.CountResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/api.Empty"
+                        }
+                    }
+                }
+            }
+        },
+        "/links.json": {
+            "get": {
+                "description": "Companies links",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/verify.LinksResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/api.Empty"
+                        }
+                    }
+                }
+            }
+        },
+        "/verify.json": {
+            "post": {
+                "description": "Verify",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "description": "request",
+                        "name": "verify.VerifyRequest",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/verify.VerifyRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/verify.VerifyResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/api.Empty"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "api.CountResponse": {
+            "type": "object",
+            "properties": {
+                "count": {
+                    "type": "integer"
+                }
+            }
+        },
+        "api.Empty": {
+            "type": "object"
+        },
+        "verify.LinksResponse": {
+            "type": "object",
+            "properties": {
+                "groups": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/verify.PrefixGroup"
+                    }
+                }
+            }
+        },
+        "verify.PrefixGroup": {
+            "type": "object",
+            "properties": {
+                "prefix": {
+                    "type": "string"
+                },
+                "prefixes": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "verify.VerifyRequest": {
+            "type": "object",
+            "properties": {
+                "urls": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "version": {
+                    "type": "integer"
+                }
+            }
+        },
+        "verify.VerifyResponse": {
+            "type": "object",
+            "properties": {
+                "exists": {
+                    "type": "boolean"
+                }
+            }
+        }
+    }
+}

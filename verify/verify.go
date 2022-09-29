@@ -220,6 +220,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 	},
 
 	// https://github.com/stopdiiacity/stopdiiacity-app-go/issues/1
+	// https://github.com/stopdiiacity/stopdiiacity-app-go/issues/3
 	{
 		Prefix: "https://jobs.dou.ua/companies/",
 		Prefixes: []string{
@@ -356,6 +357,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/itransition/",
 			"https://jobs.dou.ua/companies/health-joy/",
 			"https://jobs.dou.ua/companies/diligences-inc/",
+			"https://jobs.dou.ua/companies/cloud-works/",
 			"https://jobs.dou.ua/companies/geniusee/",
 			"https://jobs.dou.ua/companies/epom/offices/",
 			"https://jobs.dou.ua/companies/buki/",
@@ -375,6 +377,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/evo/",
 			"https://jobs.dou.ua/companies/kernel/",
 			"https://jobs.dou.ua/companies/flexreality/",
+			"https://jobs.dou.ua/companies/mwdn/",
 			"https://jobs.dou.ua/companies/lyft/",
 			"https://jobs.dou.ua/companies/softpositive/",
 			"https://jobs.dou.ua/companies/transoftgroup/",
@@ -408,6 +411,24 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/byteant/",
 			"https://jobs.dou.ua/companies/doc-ua/",
 			"https://jobs.dou.ua/companies/g5-entertainment-ab/",
+			"https://jobs.dou.ua/companies/payris/",
+			"https://jobs.dou.ua/companies/starladder/",
+			"https://jobs.dou.ua/companies/solus-agency/",
+			"https://jobs.dou.ua/companies/brights/",
+			"https://jobs.dou.ua/companies/kitsoft/",
+			"https://jobs.dou.ua/companies/aimap/",
+			"https://jobs.dou.ua/companies/sap-ukraine/",
+			"https://jobs.dou.ua/companies/goit/",
+			"https://jobs.dou.ua/companies/lun-ua/",
+			"https://jobs.dou.ua/companies/stakelogic/",
+			"https://jobs.dou.ua/companies/mita-teknik/",
+			"https://jobs.dou.ua/companies/quantum-international/",
+			"https://jobs.dou.ua/companies/lampa/",
+			"https://jobs.dou.ua/companies/infopulse/",
+			"https://jobs.dou.ua/companies/ulysses-graphics/",
+			"https://jobs.dou.ua/companies/edvantis/",
+			"https://jobs.dou.ua/companies/amedia/",
+			"https://jobs.dou.ua/companies/laba/",
 		},
 	},
 

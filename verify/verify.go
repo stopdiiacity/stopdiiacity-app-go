@@ -221,6 +221,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 
 	// https://github.com/stopdiiacity/stopdiiacity-app-go/issues/1
 	// https://github.com/stopdiiacity/stopdiiacity-app-go/issues/3
+	// https://github.com/stopdiiacity/stopdiiacity-app-go/issues/4
 	{
 		Prefix: "https://jobs.dou.ua/companies/",
 		Prefixes: []string{
@@ -359,7 +360,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/diligences-inc/",
 			"https://jobs.dou.ua/companies/cloud-works/",
 			"https://jobs.dou.ua/companies/geniusee/",
-			"https://jobs.dou.ua/companies/epom/offices/",
+			"https://jobs.dou.ua/companies/epom/",
 			"https://jobs.dou.ua/companies/buki/",
 			"https://jobs.dou.ua/companies/neonomics-ukraine/",
 			"https://jobs.dou.ua/companies/ajax-systems/",
@@ -429,6 +430,15 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/edvantis/",
 			"https://jobs.dou.ua/companies/amedia/",
 			"https://jobs.dou.ua/companies/laba/",
+			"https://jobs.dou.ua/companies/star/",
+			"https://jobs.dou.ua/companies/admitad/",
+			"https://jobs.dou.ua/companies/gruppa-kompanij-faktor/",
+			"https://jobs.dou.ua/companies/dtek-llc/",
+			"https://jobs.dou.ua/companies/tov-badm/",
+			"https://jobs.dou.ua/companies/teamsoft/",
+			"https://jobs.dou.ua/companies/ey-ukraine/",
+			"https://jobs.dou.ua/companies/a-level-ukraine/",
+			"https://jobs.dou.ua/companies/bdo-llc/",
 		},
 	},
 

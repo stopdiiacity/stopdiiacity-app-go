@@ -40,6 +40,9 @@ type Response struct {
 
 var outsideWarCompanies = [][]string{
 	{
+		"https://jobs.dou.ua/companies/pin-up-tech/",
+	},
+	{
 		"https://jobs.dou.ua/companies/epam-systems/",        // https://dou.ua/forums/topic/36742/
 		"https://jobs.dou.ua/companies/epam-anywhere/",       // https://dou.ua/forums/topic/36742/
 		"https://djinni.co/jobs/company-epam-systems-bb0df/", // https://dou.ua/forums/topic/36742/
@@ -93,6 +96,13 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/lift-stories-editor/",         // Genesis
 			"https://jobs.dou.ua/companies/sendios/",                     // Genesis
 			"https://jobs.dou.ua/companies/keiki/",                       // Genesis
+			"https://jobs.dou.ua/companies/universe/",                    // Genesis
+			"https://jobs.dou.ua/companies/amo/",                         // Genesis
+			"https://jobs.dou.ua/companies/codefinity/",                  // Genesis
+			"https://jobs.dou.ua/companies/intellectokids/",              // Genesis
+			"https://jobs.dou.ua/companies/howly/",                       // Genesis
+			"https://jobs.dou.ua/companies/appflame/",                    // Genesis
+			"https://jobs.dou.ua/companies/quarks-tech/",                 // Genesis
 			"https://jobs.dou.ua/companies/jooble/",
 			"https://jobs.dou.ua/companies/netpeak/",             // netpeak
 			"https://jobs.dou.ua/companies/netpeak-group/",       // netpeak
@@ -109,7 +119,8 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/banza/",
 			"https://jobs.dou.ua/companies/datagroup/",
 			"https://jobs.dou.ua/companies/deus-robots/",
-			"https://jobs.dou.ua/companies/parimatch-tech/",
+			"https://jobs.dou.ua/companies/parimatch-tech/", // parimatch
+			"https://jobs.dou.ua/companies/gr8-tech/",       // parimatch https://dou.ua/lenta/news/parimatch-tech-turned-into-gr8-tech/
 			"https://jobs.dou.ua/companies/pm-international/",
 			"https://jobs.dou.ua/companies/pokermatch/",
 			"https://jobs.dou.ua/companies/epam-systems/",
@@ -439,6 +450,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/ey-ukraine/",
 			"https://jobs.dou.ua/companies/a-level-ukraine/",
 			"https://jobs.dou.ua/companies/bdo-llc/",
+			"https://jobs.dou.ua/companies/orderry/", // https://dou.ua/lenta/articles/diia-city-registry/#2525061
 		},
 	},
 
@@ -569,6 +581,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://djinni.co/jobs/company-omo-systems-aae77/",   // https://dou.ua/lenta/articles/diia-city-registry/
 
 			"https://djinni.co/jobs/company-trinetix-58b20/", // from email letter inside 2022-02-16
+			"https://djinni.co/jobs/?company=orderry-4c6fb",  // https://dou.ua/lenta/articles/diia-city-registry/#2525061
 		},
 	},
 	{
@@ -594,7 +607,10 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://www.linkedin.com/company/flyer-one-vc/",            // Genesis
 			"https://www.linkedin.com/company/redtrackio/",              // Genesis
 			"https://www.linkedin.com/company/sendios/",                 // Genesis
+			"https://www.linkedin.com/company/sendiosu-ukraine/",        // Genesis
 			"https://www.linkedin.com/company/keiki-tech/",              // Genesis
+			"https://www.linkedin.com/company/appflameofficial/",        // Genesis
+			"https://www.linkedin.com/company/quarks-tech/",             // Genesis
 			"https://www.linkedin.com/company/jooble/",
 			"https://www.linkedin.com/company/netpeak-group/",       // netpeak
 			"https://www.linkedin.com/company/netpeak/",             // netpeak
@@ -615,6 +631,9 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://www.linkedin.com/company/deus-robots/",
 
 			"https://www.linkedin.com/company/parimatch-tech/",
+			"https://www.linkedin.com/company/parimatch-tech1/",
+			"https://www.linkedin.com/company/parimatch-hq-cy/",
+			"https://www.linkedin.com/company/parimatch-tech-career/",
 			"https://www.linkedin.com/company/parimatch-global/",
 			"https://www.linkedin.com/company/parimatch-international/",
 			"https://www.linkedin.com/company/parimatch-cy/",
@@ -623,6 +642,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://www.linkedin.com/company/parimatch-africa/",
 			"https://www.linkedin.com/company/parimatch-kazakhstan/",
 			"https://www.linkedin.com/company/parimatch-russia/",
+			"https://www.linkedin.com/company/gr8-tech/",
 			"https://www.linkedin.com/company/pmint/",
 			"https://www.linkedin.com/company/pokermatch/",
 			"https://www.linkedin.com/company/pokermatch-ukraine/",
@@ -731,6 +751,8 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://www.linkedin.com/company/omosystems/",                                  // https://dou.ua/lenta/articles/diia-city-registry/
 
 			"https://www.linkedin.com/company/trinetix-inc/", // from email letter inside 2022-02-16
+
+			"https://www.linkedin.com/company/orderry/", // https://dou.ua/lenta/articles/diia-city-registry/#2525061
 		},
 	},
 }

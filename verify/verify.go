@@ -233,6 +233,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 	// https://github.com/stopdiiacity/stopdiiacity-app-go/issues/1
 	// https://github.com/stopdiiacity/stopdiiacity-app-go/issues/3
 	// https://github.com/stopdiiacity/stopdiiacity-app-go/issues/4
+	// https://github.com/stopdiiacity/stopdiiacity-app-go/issues/5
 	{
 		Prefix: "https://jobs.dou.ua/companies/",
 		Prefixes: []string{
@@ -450,6 +451,32 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/ey-ukraine/",
 			"https://jobs.dou.ua/companies/a-level-ukraine/",
 			"https://jobs.dou.ua/companies/bdo-llc/",
+			"https://jobs.dou.ua/companies/ubisoft/",
+			"https://jobs.dou.ua/companies/globallogic/",
+			"https://jobs.dou.ua/companies/visa/",
+			"https://jobs.dou.ua/companies/unillence/",
+			"https://jobs.dou.ua/companies/airslate/",
+			"https://jobs.dou.ua/companies/datamola/",
+			"https://jobs.dou.ua/companies/billtech/",
+			"https://jobs.dou.ua/companies/best-run-consulting/",
+			"https://jobs.dou.ua/companies/singlestore/",
+			"https://jobs.dou.ua/companies/de7-partner-llc/",
+			"https://jobs.dou.ua/companies/quipu-gmbh/",
+			"https://jobs.dou.ua/companies/kyivstar/",
+			"https://jobs.dou.ua/companies/qoders-koders-ukraina/",
+			"https://jobs.dou.ua/companies/winstars-technology/",
+			"https://jobs.dou.ua/companies/innovecs/",
+			"https://jobs.dou.ua/companies/pettersonapps/",
+			"https://jobs.dou.ua/companies/archer-software/",
+			"https://jobs.dou.ua/companies/cadeau-concepten/",
+			"https://jobs.dou.ua/companies/voloshyn-company/",
+			"https://jobs.dou.ua/companies/edsson/",
+			"https://jobs.dou.ua/companies/innovation-group/",
+			"https://jobs.dou.ua/companies/autodoc/",
+			"https://jobs.dou.ua/companies/beetroot-academy/",
+			"https://jobs.dou.ua/companies/amdaris-group/",
+			"https://jobs.dou.ua/companies/luxena/",
+			"https://jobs.dou.ua/companies/preste/",
 			"https://jobs.dou.ua/companies/orderry/", // https://dou.ua/lenta/articles/diia-city-registry/#2525061
 		},
 	},

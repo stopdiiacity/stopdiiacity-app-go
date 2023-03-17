@@ -90,6 +90,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/solidgate/",                   // Genesis
 			"https://jobs.dou.ua/companies/headway-1/",                   // Genesis
 			"https://jobs.dou.ua/companies/socialtech/",                  // Genesis
+			"https://jobs.dou.ua/companies/skelar/",                      // Genesis
 			"https://jobs.dou.ua/companies/obrio/",                       // Genesis
 			"https://jobs.dou.ua/companies/boosters-product-team/",       // Genesis
 			"https://jobs.dou.ua/companies/betterme/",                    // Genesis

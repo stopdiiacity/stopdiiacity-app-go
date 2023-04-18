@@ -104,6 +104,8 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/howly/",                       // Genesis
 			"https://jobs.dou.ua/companies/appflame/",                    // Genesis
 			"https://jobs.dou.ua/companies/quarks-tech/",                 // Genesis
+			"https://jobs.dou.ua/companies/cpamatica/",                   // Genesis
+			"https://jobs.dou.ua/companies/flyer-one-ventures/",          // Genesis
 			"https://jobs.dou.ua/companies/jooble/",
 			"https://jobs.dou.ua/companies/netpeak/",             // netpeak
 			"https://jobs.dou.ua/companies/netpeak-group/",       // netpeak
@@ -228,6 +230,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/omo-systems/",         // https://dou.ua/lenta/articles/diia-city-registry/
 
 			"https://jobs.dou.ua/companies/trinetix/", // from email letter inside 2022-02-16
+			"https://jobs.dou.ua/companies/dmarket/",  // https://jobs.dou.ua/companies/dmarket/vacancies/222376/
 		},
 	},
 

@@ -233,6 +233,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/dmarket/",  // https://jobs.dou.ua/companies/dmarket/vacancies/222376/
 			"https://jobs.dou.ua/companies/comfy/",    // https://djinni.co/jobs/494285-senior-golang-developer-proektna-robota-/
 			"https://jobs.dou.ua/companies/upstars/",  // https://opendatabot.ua/c/43212002
+			"https://jobs.dou.ua/companies/eventyr/",  // https://jobs.dou.ua/companies/eventyr/reviews/61636/
 		},
 	},
 

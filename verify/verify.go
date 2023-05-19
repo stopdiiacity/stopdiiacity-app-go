@@ -235,6 +235,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/upstars/",  // https://opendatabot.ua/c/43212002
 			"https://jobs.dou.ua/companies/eventyr/",  // https://jobs.dou.ua/companies/eventyr/reviews/61636/
 			"https://jobs.dou.ua/companies/smarttek/", // https://opendatabot.ua/c/43961471 https://opendatabot.ua/c/40594308
+			"https://jobs.dou.ua/companies/arsmoon/",  // https://opendatabot.ua/c/43961471 https://opendatabot.ua/c/40594308
 		},
 	},
 

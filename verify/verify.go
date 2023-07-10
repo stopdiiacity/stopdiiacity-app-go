@@ -106,6 +106,9 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/quarks-tech/",                 // Genesis
 			"https://jobs.dou.ua/companies/cpamatica/",                   // Genesis
 			"https://jobs.dou.ua/companies/flyer-one-ventures/",          // Genesis
+			"https://jobs.dou.ua/companies/subsub/",                      // Genesis
+			"https://jobs.dou.ua/companies/plantin/",                     // Genesis
+			"https://jobs.dou.ua/companies/suitsme/",                     // Genesis
 			"https://jobs.dou.ua/companies/jooble/",
 			"https://jobs.dou.ua/companies/netpeak/",             // netpeak
 			"https://jobs.dou.ua/companies/netpeak-group/",       // netpeak
@@ -236,6 +239,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/eventyr/",  // https://jobs.dou.ua/companies/eventyr/reviews/61636/
 			"https://jobs.dou.ua/companies/smarttek/", // https://opendatabot.ua/c/43961471 https://opendatabot.ua/c/40594308
 			"https://jobs.dou.ua/companies/arsmoon/",  // https://opendatabot.ua/c/43961471 https://opendatabot.ua/c/40594308
+			"https://jobs.dou.ua/companies/orderry/",  // https://dou.ua/lenta/articles/diia-city-registry/#2525061
 		},
 	},
 
@@ -244,6 +248,7 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 	// https://github.com/stopdiiacity/stopdiiacity-app-go/issues/4
 	// https://github.com/stopdiiacity/stopdiiacity-app-go/issues/5
 	// https://github.com/stopdiiacity/stopdiiacity-app-go/issues/6
+	// https://github.com/stopdiiacity/stopdiiacity-app-go/issues/7
 	{
 		Prefix: "https://jobs.dou.ua/companies/",
 		Prefixes: []string{
@@ -524,7 +529,35 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://jobs.dou.ua/companies/nokia/",
 			"https://jobs.dou.ua/companies/weplay-esports/",
 			"https://jobs.dou.ua/companies/gsc-game-world/",
-			"https://jobs.dou.ua/companies/orderry/", // https://dou.ua/lenta/articles/diia-city-registry/#2525061
+			"https://jobs.dou.ua/companies/enim-soft/",
+			"https://jobs.dou.ua/companies/zelh/",
+			"https://jobs.dou.ua/companies/smartcraft/",
+			"https://jobs.dou.ua/companies/ooo-ukrnet/",
+			"https://jobs.dou.ua/companies/cleverfleet/",
+			"https://jobs.dou.ua/companies/ubos-tech/",
+			"https://jobs.dou.ua/companies/aspichi/",
+			"https://jobs.dou.ua/companies/respeecher/",
+			"https://jobs.dou.ua/companies/webcase/",
+			"https://jobs.dou.ua/companies/stfalcon-studio/",
+			"https://jobs.dou.ua/companies/tabletki-ua/",
+			"https://jobs.dou.ua/companies/watched-tech/",
+			"https://jobs.dou.ua/companies/it-smartflex/",
+			"https://jobs.dou.ua/companies/igis/",
+			"https://jobs.dou.ua/companies/thingsboard-inc/",
+			"https://jobs.dou.ua/companies/relokia/",
+			"https://jobs.dou.ua/companies/eigenmethod/",
+			"https://jobs.dou.ua/companies/ftech-ua/",
+			"https://jobs.dou.ua/companies/novaposhta/",
+			"https://jobs.dou.ua/companies/dlp-group/",
+			"https://jobs.dou.ua/companies/moohii-com/",
+			"https://jobs.dou.ua/companies/medirent/",
+			"https://jobs.dou.ua/companies/spaceberry/",
+			"https://jobs.dou.ua/companies/bit-sistems/",
+			"https://jobs.dou.ua/companies/memcrab-studio/",
+			"https://jobs.dou.ua/companies/elomia/",
+			"https://jobs.dou.ua/companies/binotel/",
+			"https://jobs.dou.ua/companies/wise-it/",
+			"https://jobs.dou.ua/companies/cdm/",
 		},
 	},
 

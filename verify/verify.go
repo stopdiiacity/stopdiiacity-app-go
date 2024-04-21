@@ -682,10 +682,10 @@ var stopDiiaCityPrefixes = []PrefixGroup{
 			"https://djinni.co/jobs/company-pm-partners-80042/",               // https://dou.ua/lenta/articles/diia-city-registry/
 			"https://djinni.co/jobs/company-codiv-1dfa9/",                     // https://dou.ua/lenta/articles/diia-city-registry/
 			"https://djinni.co/jobs/company-ligazakon-ua-36e6e/",              // https://dou.ua/lenta/articles/diia-city-registry/
-			"https://djinni.co/jobs/company-home-games-66cdf/	", // https://dou.ua/lenta/articles/diia-city-registry/
-			"https://djinni.co/jobs/company-jet-bi-edd8e/",        // https://dou.ua/lenta/articles/diia-city-registry/
-			"https://djinni.co/jobs/company-taurus-quadra-8f1e1/", // https://dou.ua/lenta/articles/diia-city-registry/
-			"https://djinni.co/jobs/company-omo-systems-aae77/",   // https://dou.ua/lenta/articles/diia-city-registry/
+			"https://djinni.co/jobs/company-home-games-66cdf/	",               // https://dou.ua/lenta/articles/diia-city-registry/
+			"https://djinni.co/jobs/company-jet-bi-edd8e/",                    // https://dou.ua/lenta/articles/diia-city-registry/
+			"https://djinni.co/jobs/company-taurus-quadra-8f1e1/",             // https://dou.ua/lenta/articles/diia-city-registry/
+			"https://djinni.co/jobs/company-omo-systems-aae77/",               // https://dou.ua/lenta/articles/diia-city-registry/
 
 			"https://djinni.co/jobs/company-trinetix-58b20/", // from email letter inside 2022-02-16
 			"https://djinni.co/jobs/?company=orderry-4c6fb",  // https://dou.ua/lenta/articles/diia-city-registry/#2525061

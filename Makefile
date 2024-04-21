@@ -1,3 +1,5 @@
+include Makefile.ansible
+
 template-generate:
 	qtc -dir=templates -skipLineComments
 	git add .
@@ -10,8 +12,15 @@ swag-install:
 	go get -u github.com/swaggo/swag/cmd/swag
 
 stopdiiacity-generate-docs:
-	swag init -o apidocs -g main.go
+	go install github.com/swaggo/swag/cmd/swag@latest
+
+ssh:
+	ssh -t root@70.34.251.121 "cd /var/go/stopdiiacity/; bash --login"
 
 run:
-	browse http://localhost:8080
-	PORT=8080 go run main.go
+	mkdir -p ./.docker/volumes/go/tls-certificates
+	browse http://localhost
+	PORT="80" \
+ 		TLS_CERTIFICATES_DIR="./.docker/volumes/go/tls-certificates" \
+ 		HOSTS="stopdiiacity.u8hub.com" \
+ 		go run main.go

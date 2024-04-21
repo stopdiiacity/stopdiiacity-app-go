@@ -18,10 +18,9 @@ ssh:
 	ssh -t root@70.34.251.121 "cd /var/go/stopdiiacity/; bash --login"
 
 run:
+	# browse http://localhost
 	mkdir -p ./.docker/volumes/go/tls-certificates
-	browse http://localhost
-	PORT="80" \
- 		TLS_CERTIFICATES_DIR="./.docker/volumes/go/tls-certificates" \
+	TLS_CERTIFICATES_DIR="./.docker/volumes/go/tls-certificates" \
  		HOSTS="stopdiiacity.u8hub.com" \
  		go run main.go
 
@@ -29,8 +28,7 @@ app-build:
 	go build -o /bin/stopdiiacity-server ./main.go
 
 app-start:
-	PORT="80" \
-		TLS_CERTIFICATES_DIR="./.docker/volumes/go/tls-certificates" \
+	TLS_CERTIFICATES_DIR="./.docker/volumes/go/tls-certificates" \
  		HOSTS="stopdiiacity.u8hub.com" \
 		stopdiiacity-server
 

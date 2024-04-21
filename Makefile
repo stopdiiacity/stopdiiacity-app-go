@@ -28,8 +28,8 @@ app-build:
 	go build -o /bin/stopdiiacity-server ./main.go
 
 app-start:
-	TLS_CERTIFICATES_DIR="./.docker/volumes/go/tls-certificates" \
- 		HOSTS="stopdiiacity.u8hub.com" \
+	TLS_CERTIFICATES_DIR="/var/go/stopdiiacity/.docker/volumes/go/tls-certificates" \
+		HOSTS="stopdiiacity.u8hub.com" \
 		stopdiiacity-server
 
 app-stop:

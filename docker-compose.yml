@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  app:
+    container_name: "stopdiiacity_go_app"
+    image: golang:1.21.0-alpine
+    working_dir: /go/src/github.com/stopdiiacity/stopdiiacity-app-go
+    volumes:
+      - .:/go/src/github.com/stopdiiacity/stopdiiacity-app-go
+      - ./.docker/volumes/go/tls-certificates:/var/lib/tls-certificates/data/
+    environment:
+      TLS_CERTIFICATES_DIR: /var/lib/tls-certificates/data/
+      HOSTS: ${HOSTS}
+    ports:
+      - "80:80"
+      - "443:443"
+    command: "sleep infinity"

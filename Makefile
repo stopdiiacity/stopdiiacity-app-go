@@ -17,22 +17,28 @@ stopdiiacity-generate-docs:
 ssh:
 	ssh -t root@70.34.251.121 "cd /var/go/stopdiiacity/; bash --login"
 
-run:
-	# browse http://localhost
-	mkdir -p ./.docker/volumes/go/tls-certificates
-	TLS_CERTIFICATES_DIR="./.docker/volumes/go/tls-certificates" \
- 		HOSTS="stopdiiacity.u8hub.com" \
- 		go run main.go
+env-up:
+	docker-compose -f docker-compose.yml --env-file .env up -d
+
+logs:
+	docker logs stopdiiacity_go_app
+
+app:
+	docker exec -it stopdiiacity_go_app sh
+
+env-down:
+	docker-compose -f docker-compose.yml --env-file .env down
+
+env-down-with-clear:
+	docker-compose -f docker-compose.yml --env-file .env down --remove-orphans -v # --rmi=all
 
 app-build:
-	go build -o /bin/stopdiiacity-server ./main.go
+	docker exec stopdiiacity_go_app go build -o /bin/stopdiiacity-server ./cmd/main.go
 
 app-start:
-	TLS_CERTIFICATES_DIR="/var/go/stopdiiacity/.docker/volumes/go/tls-certificates" \
-		HOSTS="stopdiiacity.u8hub.com" \
-		stopdiiacity-server
+	docker exec stopdiiacity_go_app stopdiiacity-server
 
 app-stop:
-	pkill stopdiiacity-server || echo "stopdiiacity-server already stopped"
+	docker exec stopdiiacity_go_app pkill stopdiiacity-server || echo "stopdiiacity-server already stopped"
 
 app-restart: app-build app-stop app-start

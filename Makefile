@@ -24,3 +24,17 @@ run:
  		TLS_CERTIFICATES_DIR="./.docker/volumes/go/tls-certificates" \
  		HOSTS="stopdiiacity.u8hub.com" \
  		go run main.go
+
+app-build:
+	go build -o /bin/stopdiiacity-server ./main.go
+
+app-start:
+	PORT="80" \
+		TLS_CERTIFICATES_DIR="./.docker/volumes/go/tls-certificates" \
+ 		HOSTS="stopdiiacity.u8hub.com" \
+		stopdiiacity-server
+
+app-stop:
+	pkill stopdiiacity-server || echo "stopdiiacity-server already stopped"
+
+app-restart: app-build app-stop app-start

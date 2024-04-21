@@ -15,9 +15,10 @@ stopdiiacity-generate-docs:
 	go install github.com/swaggo/swag/cmd/swag@latest
 
 ssh:
-	ssh -t root@70.34.251.121 "cd /var/go/stopdiiacity/; bash --login"
+	ssh -t root@70.34.248.2 "cd /var/go/stopdiiacity/; bash --login"
 
 env-up:
+	mkdir -p ./.docker/volumes/go/tls-certificates
 	docker-compose -f docker-compose.yml --env-file .env up -d
 
 logs:

@@ -24,7 +24,6 @@ var (
 	count uint64 = 0
 )
 
-//
 // VerifyHandler handler
 //
 // @Accept       json
@@ -34,7 +33,6 @@ var (
 // @Success      200                   {object}  verify.VerifyResponse
 // @Failure      400  {object}  Empty
 // @Router       /verify.json [post]
-//
 func VerifyHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Access-Control-Allow-Origin", "*")
 	w.Header().Add("Content-Type", "application/json")
@@ -53,7 +51,6 @@ func VerifyHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(response.Body))
 }
 
-//
 // CountHandler handler
 //
 // @Accept       json
@@ -62,7 +59,6 @@ func VerifyHandler(w http.ResponseWriter, r *http.Request) {
 // @Success      200  {object}  CountResponse
 // @Failure      400  {object}  Empty
 // @Router       /count.json [get]
-//
 func CountHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Access-Control-Allow-Origin", "*")
 	w.Header().Add("Content-Type", "application/json")
@@ -80,7 +76,6 @@ func CountHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write(content)
 }
 
-//
 // LinksHandler handler
 //
 // @Accept       json
@@ -89,7 +84,6 @@ func CountHandler(w http.ResponseWriter, r *http.Request) {
 // @Success      200  {object}  verify.LinksResponse
 // @Failure      400                   {object}  Empty
 // @Router       /links.json [get]
-//
 func LinksHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Access-Control-Allow-Origin", "*")
 	w.Header().Add("Content-Type", "application/json")

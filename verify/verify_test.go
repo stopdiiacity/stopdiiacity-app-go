@@ -16,7 +16,9 @@ func TestHandler(t *testing.T) {
 		}
 	)
 
-	for _, url := range urls {
+	f := func(t *testing.T, url string, expected string) {
+		t.Helper()
+
 		var request = VerifyRequest{
 			URLs:    []string{url},
 			Version: 1,
@@ -26,6 +28,9 @@ func TestHandler(t *testing.T) {
 		require.NoError(t, marshalErr)
 
 		var response = Verify(body)
-		require.Equal(t, Response{unsafeMessage, http.StatusOK}, response)
+		require.Equal(t, Response{expected, http.StatusOK}, response)
 	}
+
+	f(t, "https://jobs.dou.ua/companies/allright/reviews", unsafeMessage)
+	f(t, "https://djinni.co/jobs/?company=epam-systems-bb0df", unsafeOutsideWarCompanyMessage)
 }

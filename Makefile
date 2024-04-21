@@ -1,3 +1,5 @@
+include Makefile.ansible
+
 template-generate:
 	qtc -dir=templates -skipLineComments
 	git add .
@@ -10,8 +12,33 @@ swag-install:
 	go get -u github.com/swaggo/swag/cmd/swag
 
 stopdiiacity-generate-docs:
-	swag init -o apidocs -g main.go
+	go install github.com/swaggo/swag/cmd/swag@latest
 
-run:
-	browse http://localhost:8080
-	PORT=8080 go run main.go
+ssh:
+	ssh -t root@70.34.251.121 "cd /var/go/stopdiiacity/; bash --login"
+
+env-up:
+	docker-compose -f docker-compose.yml --env-file .env up -d
+
+logs:
+	docker logs stopdiiacity_go_app
+
+app:
+	docker exec -it stopdiiacity_go_app sh
+
+env-down:
+	docker-compose -f docker-compose.yml --env-file .env down
+
+env-down-with-clear:
+	docker-compose -f docker-compose.yml --env-file .env down --remove-orphans -v # --rmi=all
+
+app-build:
+	docker exec stopdiiacity_go_app go build -o /bin/stopdiiacity-server ./cmd/main.go
+
+app-start:
+	docker exec stopdiiacity_go_app stopdiiacity-server
+
+app-stop:
+	docker exec stopdiiacity_go_app pkill stopdiiacity-server || echo "stopdiiacity-server already stopped"
+
+app-restart: app-build app-stop app-start

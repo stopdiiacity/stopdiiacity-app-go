@@ -5,7 +5,7 @@ template-generate:
 	git add .
 
 generate-html: template-generate
-	go run ./cmd/main.go
+	go run ./cmd/generate-html/main.go
 	git add .
 
 swag-install:
@@ -34,7 +34,7 @@ env-down-with-clear:
 	docker-compose -f docker-compose.yml --env-file .env down --remove-orphans -v # --rmi=all
 
 app-build:
-	docker exec stopdiiacity_go_app go build -o /bin/stopdiiacity-server ./cmd/main.go
+	docker exec stopdiiacity_go_app go build -o /bin/stopdiiacity-server ./main.go
 
 app-start:
 	docker exec stopdiiacity_go_app stopdiiacity-server

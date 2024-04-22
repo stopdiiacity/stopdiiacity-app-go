@@ -25,4 +25,4 @@ jobs:
         run: go vet ./...
 
       - name: Unit tests
-        run: ENVIRONMENT=development go test ./... -v -short
+        run: go test ./... -v -short

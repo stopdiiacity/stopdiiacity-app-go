@@ -25,5 +25,5 @@ func TestHandler(t *testing.T) {
 	}
 
 	f(t, "https://jobs.dou.ua/companies/allright/reviews", unsafeMessage)
-	f(t, "https://djinni.co/jobs/?company=epam-systems-bb0df", unsafeOutsideWarCompanyMessage)
+	f(t, "https://djinni.co/jobs/?company=epam-systems-bb0df", safeMessage)
 }

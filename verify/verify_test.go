@@ -9,13 +9,6 @@ import (
 )
 
 func TestHandler(t *testing.T) {
-	var (
-		urls = []string{
-			"https://jobs.dou.ua/companies/allright/reviews",
-			"https://djinni.co/jobs/company-epam-systems-bb0df/",
-		}
-	)
-
 	f := func(t *testing.T, url string, expected string) {
 		t.Helper()
 
